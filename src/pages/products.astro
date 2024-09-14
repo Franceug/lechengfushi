@@ -1,0 +1,125 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Cards from "../components/Cards.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Products">
+  <section class="text-white flex flex-col gap-14 py-10 px-8%">
+    <article class="full flex flex-col gap-3">
+      <span class="flex gap-1 justify-center items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          乐cheng服饰，您的理想团体服饰定制伙伴！
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <p class="max-w-4xl text-center m-auto">
+        自创立以来，我们一直致力于为客户提供高品质的定制服装解决方案。我们的核心服务包括团体服饰定做、校服设计制作、企业服装定制以及西装量身定做等，满足不同客户的独特需求。
+        在乐cheng服饰，我们相信每一件服装都是展现团队精神和个人风采的重要载体。因此，我们精心挑选优质面料，结合精湛的工艺和时尚的设计，确保每一件服装都能成为穿着者自信与舒适的源泉。我们的团队拥有丰富的行业经验，从设计到成品，每一个环节都严格把控，力求为客户提供超出期待的服务体验。
+        选择乐cheng服饰，不仅是选择了一件服装，更是选择了一份专业与信赖。我们期待与您携手，共同打造属于您的专属服饰，让您的团队形象更加鲜明，让您的每一次亮相都成为焦点。立即联系我们，开启您的定制之旅吧！
+    </article>
+    <Cards />
+    <article class="px-8% flex flex-col gap-5">
+      <span class="flex gap-1 items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          high quality products
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <div class="flex justify-between items-center flex-wrap gap-5">
+        <p class="max-w-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est
+          quod non sunt molestiae ad culpa excepturi voluptate, voluptatum autem
+          provident soluta, ipsam quae odio mollitia et? Deserunt,
+          necessitatibus voluptate. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit.
+        </p>
+        <div class="flex gap-12 flex-wrap justify-center items-center ">
+
+          <img class=" hover:animate-jump w-36" src="/images/marke.svg" alt="">
+          <img class=" hover:animate-jump w-32" src="/images/marke2.svg" alt="">
+          <img class=" hover:animate-jump w-32" src="/images/seo.svg" alt="">
+        </div>
+      </div>
+    </article>
+    <Footer />
+    <span class="item"></span>
+    <span class="item2"></span>
+    <span class="item3"></span>
+  </section>
+</Layout>
+
+<style>
+  span.item {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 7rem;
+    height: 8rem;
+    transform: rotate(90deg) skewX(-12deg);
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(4rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 300px) {
+    span.item {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item2 {
+    position: absolute;
+    top: 85%;
+    left: 55%;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, rgb(81, 95, 1), rgb(9, 39, 119));
+    filter: blur(3rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 700px) {
+    span.item2 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item3 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, blue, violet);
+    filter: blur(5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 300px) {
+    span.item3 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+</style>
